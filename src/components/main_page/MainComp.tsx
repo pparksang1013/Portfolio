@@ -47,7 +47,7 @@ const Style_Title = styled.h1`
     font-weight: 900;
     font-family: "akira";
     color: #fff;
-    background-color: rgba(var(--primary-rgb), 0.9);
+    background-color: rgba(var(--primary-rgb), 0.7);
     padding: 20px 50px;
     position: relative;
     filter: saturate(1.55);
