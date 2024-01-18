@@ -1,10 +1,13 @@
 import { styled } from "styled-components";
 import { Wrapper } from "../style/CommonStyleComp";
+import SlideComp from "./SlideComp";
 
 function ProjectComp() {
     return (
         <Style_Wrapper>
-            <div className="max_widthBox"></div>
+            <div className="max_widthBox">
+                <SlideComp />
+            </div>
         </Style_Wrapper>
     );
 }
