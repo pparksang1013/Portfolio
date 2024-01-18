@@ -17,8 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root {
+        --black-color: #454545;
         --primary-color: #f20505;
         --primary-rgb: 217, 4, 22;
+        --green-color: #038C73;
+        --green-rgb: 3, 140, 115;
     }
     
     * {
@@ -29,9 +32,15 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "suit";
+        overflow-x: hidden;
+        color: var(--black-color);
     }
 
     h1,h2,h3,h4,h5,h6 {
         margin: 0;
+    }
+
+    ul, li {
+        list-style: none;
     }
 `;
