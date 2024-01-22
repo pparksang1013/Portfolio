@@ -15,7 +15,7 @@ function ProjectComp() {
 export default ProjectComp;
 
 const Style_Wrapper = styled(Wrapper)`
-    background-color: var(--black-color);
+    background-color: #f2f2f2;
     display: flex;
     align-items: center;
 
