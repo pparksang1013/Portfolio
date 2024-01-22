@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { styled } from "styled-components";
 import { motion, useMotionValue } from "framer-motion";
 
@@ -12,7 +12,22 @@ function SlideComp() {
     const motionX = useMotionValue(0);
 
     const project = projects_data.map((ele, i) => {
-        return <Style_Slide key={i}>{ele.title}</Style_Slide>;
+        return (
+            <Style_Slide key={i}>
+                <div className="title_box">
+                    <img src={ele.icon} alt="icon" />
+                    {ele.title}
+                </div>
+
+                <div className="stack_box">
+                    {ele.stack.map((Stack, i) => (
+                        <React.Fragment key={i}>{Stack}</React.Fragment>
+                    ))}
+                </div>
+
+                <div className="detail_box"></div>
+            </Style_Slide>
+        );
     });
 
     const handleDragStart = () => {
@@ -33,10 +48,11 @@ function SlideComp() {
 
     return (
         <>
+            <Style_ProjectTitle>프로젝트</Style_ProjectTitle>
             <Style_SlideBox
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
-                animate={{ translateX: `-${slideIdx * 100}%` }}
+                animate={{ translateX: `calc(-${slideIdx * 100}%)` }}
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
                 transition={{ duration: 0.48, ease: "easeOut" }}
@@ -50,6 +66,13 @@ function SlideComp() {
 
 export default SlideComp;
 
+const Style_ProjectTitle = styled.h2`
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #c3c3c3;
+    margin-bottom: 1.4rem;
+`;
+
 const Style_SlideBox = styled(motion.ul)`
     display: flex;
     gap: 30px;
@@ -57,7 +80,23 @@ const Style_SlideBox = styled(motion.ul)`
 
 const Style_Slide = styled.li`
     height: 600px;
-    min-width: 1280px;
+    min-width: 1250px;
     border-radius: 10px;
     background-color: #fff;
+
+    .title_box {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 30px;
+        font-size: 2.7rem;
+        font-weight: 900;
+        -webkit-text-stroke: 1px var(--black-color);
+        color: var(--black-color);
+    }
 `;
