@@ -14,14 +14,14 @@ import styled from "styled-components";
 
 type StacksType = {
     todoStack: React.ReactElement[];
-    kanbanStack: (React.ReactElement | string)[];
-    blogStack: (React.ReactElement | string)[];
+    kanbanStack: React.ReactElement[];
+    blogStack: React.ReactElement[];
     portfolioStack: React.ReactElement[];
 };
 
 const Common_Icon = styled.div`
-    width: 24px;
-    height: 24px;
+    width: 2.5rem;
+    height: 2.5rem;
 `;
 
 const Styled_react = styled(Common_Icon).attrs({ as: FaReact })`
@@ -61,13 +61,19 @@ const Styled_framer = styled(Common_Icon).attrs({ as: SiFramer })`
 `;
 
 const Styled_vite = styled(Common_Icon).attrs({ as: SiVite })`
-    color: var(--black-color);
+    color: #ffd529;
+`;
+
+const NoIcon = styled.span`
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: "akira";
 `;
 
 export const stacks: StacksType = {
     todoStack: [<Styled_react />, <Styled_router />, <Styled_components />, <Styled_axios />],
-    kanbanStack: [<Styled_react />, <Styled_git />, "apexcharts"],
-    blogStack: [<Styled_next />, <Styled_typescript />, <Styled_css />, "contentlayer"],
+    kanbanStack: [<Styled_react />, <Styled_git />, <NoIcon>apexchart</NoIcon>],
+    blogStack: [<Styled_next />, <Styled_typescript />, <Styled_css />, <NoIcon>contentlayer</NoIcon>],
     portfolioStack: [
         <Styled_react />,
         <Styled_typescript />,

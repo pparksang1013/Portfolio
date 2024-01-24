@@ -1,37 +1,38 @@
 interface ProjectType {
     title: string;
-    icon: string;
-    stack: (React.ReactElement | string)[];
+    stack: React.ReactElement[];
+    role: string | React.ReactElement;
+    sub: React.ReactElement;
 }
 
 // ICONS
 import { stacks } from "./Stacks.tsx";
-
-// IMG
-import todoIcon from "/img/todo-login_icon.png";
-import kanbanIcon from "/img/kanban_icon.png";
-import blogIcon from "/img/blog_icon.png";
-import portfolioIcon from "/img/portfolio_icon.png";
+import { subDescription } from "./SubDescription";
+import { role } from "./Roles.tsx";
 
 export const projects_data: ProjectType[] = [
     {
         title: "로그인 & 투두리스트",
-        icon: todoIcon,
         stack: stacks.todoStack,
+        role: role.todo,
+        sub: subDescription.todoSub,
     },
     {
         title: "칸반보드",
-        icon: kanbanIcon,
         stack: stacks.kanbanStack,
+        role: role.kanban,
+        sub: subDescription.kanbanSub,
     },
     {
         title: "블로그",
-        icon: blogIcon,
         stack: stacks.blogStack,
+        role: role.blog,
+        sub: subDescription.blogSub,
     },
     {
         title: "포트폴리오",
-        icon: portfolioIcon,
         stack: stacks.portfolioStack,
+        role: role.portfolio,
+        sub: subDescription.portfolioSub,
     },
 ];
