@@ -1,13 +1,16 @@
 import styled from "styled-components";
-import { Wrapper } from "../style/CommonStyleComp";
+import { CommonComponents } from "../common_comp/Index";
 
 function Main() {
     return (
         <Style_MainWrapper>
+            <p className="fortfolio">포트폴리오</p>
+
             <Style_Box>
-                <p className="fortfolio">포트폴리오</p>
+                <p className="name">NPM RUN INSTALL PARK SANG MIN</p>
+
+                <img src="/img/logo.png" alt="logo" width="140" height="50" />
                 <Style_Title>IMPORT</Style_Title>
-                <p className="name">박상민</p>
             </Style_Box>
         </Style_MainWrapper>
     );
@@ -15,8 +18,15 @@ function Main() {
 
 export default Main;
 
-const Style_MainWrapper = styled(Wrapper)`
+const Style_MainWrapper = styled(CommonComponents.WrapperComp)`
     position: relative;
+
+    .fortfolio {
+        font-size: 1.72rem;
+        font-weight: 900;
+        translate: 100px 70px;
+        color: #a3a3a3;
+    }
 `;
 
 const Style_Box = styled.div`
@@ -24,44 +34,26 @@ const Style_Box = styled.div`
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-
-    p {
-        font-size: 1.72rem;
-        font-weight: 900;
-    }
-
-    .fortfolio {
-        margin-bottom: 4px;
-    }
+    font-family: "akira";
 
     .name {
-        font-size: 2.6rem;
-        text-align: right;
-        letter-spacing: 4px;
-        margin-top: 4px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #fff;
+        background-color: #57746f;
+        border-radius: 60px;
+        padding: 12px 30px;
+        width: fit-content;
+        word-spacing: 2px;
+        letter-spacing: 1px;
     }
 `;
 
 const Style_Title = styled.h1`
-    font-size: 8rem;
+    font-size: 9rem;
     font-weight: 900;
     font-family: "akira";
-    color: #fff;
-    background-color: rgba(var(--primary-rgb), 0.7);
-    padding: 20px 50px;
+    color: #454f4d;
     position: relative;
-    filter: saturate(1.55);
-
-    &::after {
-        content: "";
-        background: url("/img/paper_texture.jpg") no-repeat center center;
-        background-size: cover;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        mix-blend-mode: multiply;
-    }
+    margin-top: -26px;
 `;
