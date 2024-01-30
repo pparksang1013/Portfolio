@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import suit from "../../assets/font/SUIT-Variable.woff2";
-import akira from "../../assets/font/AkiraExpandedDemo.otf";
+import suit from "../assets/font/SUIT-Variable.woff2";
+import akira from "../assets/font/AkiraExpandedDemo.otf";
 
 export const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -18,10 +18,8 @@ export const GlobalStyle = createGlobalStyle`
 
     :root {
         --black-color: #454545;
-        --primary-color: #f20505;
-        --primary-rgb: 217, 4, 22;
-        --green-color: #038C73;
-        --green-rgb: 3, 140, 115;
+        --primary-color: #24D3B1;
+        --primary-rgb: 36, 211, 177;
     }
     
     * {
