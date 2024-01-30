@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
 import { motion, useMotionValue } from "framer-motion";
-
-import { projects_data } from "./project_data";
+import { projects_data } from "../../data/project_data";
 
 const DRAG_RANGE = 50;
 
@@ -58,7 +57,6 @@ function SlideComp() {
 
     return (
         <>
-            <Style_ProjectTitle>프로젝트</Style_ProjectTitle>
             <Style_SlideBox
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
@@ -75,13 +73,6 @@ function SlideComp() {
 }
 
 export default SlideComp;
-
-const Style_ProjectTitle = styled.h2`
-    font-size: 2.4rem;
-    font-weight: 900;
-    color: #c3c3c3;
-    margin-bottom: 1.4rem;
-`;
 
 const Style_SlideBox = styled(motion.ul)`
     display: flex;
