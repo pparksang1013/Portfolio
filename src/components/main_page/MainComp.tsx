@@ -9,7 +9,8 @@ function Main() {
             <Style_Box>
                 <p className="name">NPM RUN INSTALL PARK SANG MIN</p>
 
-                <img src="/img/logo.png" alt="logo" width="140" height="50" />
+                <img src="/img/logo.png" alt="logo" width="160" height="60" />
+
                 <Style_Title>IMPORT</Style_Title>
             </Style_Box>
         </Style_MainWrapper>
@@ -38,7 +39,7 @@ const Style_Box = styled.div`
 
     .name {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 18px;
         color: #fff;
         background-color: #57746f;
         border-radius: 60px;
@@ -55,5 +56,5 @@ const Style_Title = styled.h1`
     font-family: "akira";
     color: #454f4d;
     position: relative;
-    margin-top: -26px;
+    margin-top: -24px;
 `;
