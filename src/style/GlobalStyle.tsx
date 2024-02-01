@@ -20,6 +20,8 @@ export const GlobalStyle = createGlobalStyle`
         --black-color: #454545;
         --primary-color: #24D3B1;
         --primary-rgb: 36, 211, 177;
+        --blue-color: #4078D3;
+        --yellow-color: #FFE385;
     }
     
     * {
