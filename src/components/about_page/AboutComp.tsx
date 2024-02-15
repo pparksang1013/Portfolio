@@ -5,7 +5,7 @@ import { GridAreaComp } from "./GridAreaComp";
 function AboutComp() {
     return (
         <Style_Wrapper>
-            <CommonComponents.H3Comp title="자기소개" color="#d7d7d7" />
+            <CommonComponents.H3Comp title="자기소개" color="#d7d7d7" fontsize="2rem" stroke />
             <Style_GridBox>
                 <GridAreaComp.NameArea />
                 <GridAreaComp.WantedArea />

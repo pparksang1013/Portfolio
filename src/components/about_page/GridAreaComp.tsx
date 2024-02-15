@@ -81,7 +81,7 @@ const Style_Wanted = styled.div`
             margin-left: 14px;
         }
 
-        p {
+        .wanted_title {
             font-weight: 900;
             color: #fff;
             text-align: center;
@@ -100,7 +100,7 @@ function BootcampArea() {
             <div className="bootcamp_title-box">
                 <h3>
                     엔코아 플레이데이터 <br />
-                    빅데이터 부트캠프
+                    빅데이터 부트캠프 <span>22/11 ~ 23/06</span>
                 </h3>
             </div>
 
@@ -120,6 +120,10 @@ function BootcampArea() {
                             파이널 프로젝트를 진행할 때, 팀원들간 의사소통에 오해가 생겨 문제가 발생했습니다. 팀장으로서
                             서로의 입장을 듣고 오해를 풀어서 문제를 해결했고, 프로젝트를 성공적으로 끝마칠 수 있었던
                             경험이 있습니다.
+                        </p>
+                        <p>
+                            또한 팀원들과 수많은 의사소통을 통해 다양한 시각을 이해하고 받아들이면서, 개발에 대한 이해를
+                            얻을 수 있었습니다.
                         </p>
                     </div>
                 </div>
@@ -159,9 +163,15 @@ const Style_Bootcamp = styled.div`
         letter-spacing: 0.8px;
         font-weight: 900;
         line-height: 1.06;
-        background: linear-gradient(360deg, var(--blue-color), #9bb4db 110%);
+        background: linear-gradient(180deg, var(--blue-color) 40%, #9bb4db 160%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        span {
+            font-size: 0.9rem;
+            color: var(--black-color);
+            -webkit-text-fill-color: var(--blue-color);
+        }
     }
 `;
 
@@ -237,8 +247,8 @@ function SchoolArea() {
 
                 <p>
                     관광경영학과 특성상 수 많은 해외답사를 다녀올 수 있었습니다. 해외답사를 가기위해 팀원들과 협업을
-                    하고, 익숙하지 않은 환경에서 팀원들과 함께 어려움을 극복해나가는 경험을 많이 할 수 있었습니다.
-                    대학시절부터 협업에 익숙해질 수 있었습니다.
+                    하고, 익숙하지 않은 환경에서 함께 어려움을 극복해나가는 경험을 많이 할 수 있었습니다. 이러한 경험을
+                    통해 여러 사람들과 합을 맞춰 목표를 이뤄나가는데 많이 익숙해질 수 있었습니다.
                 </p>
             </div>
         </Style_School>
@@ -250,6 +260,7 @@ const Style_School = styled.div`
     background: url("img/school_bg.jpg");
     background-size: cover;
     padding: 18px;
+    filter: grayscale(0.25);
 
     .school_title {
         color: #fff;
@@ -271,7 +282,7 @@ const Style_School = styled.div`
             font-size: 0.9em;
             padding: 8px;
             border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.4);
         }
 
         .school_subtitle {
@@ -280,7 +291,7 @@ const Style_School = styled.div`
             padding: 6px 12px 6px;
             width: fit-content;
             border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.4);
             margin-top: 20px;
 
             h4 {
