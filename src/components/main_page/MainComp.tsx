@@ -25,7 +25,7 @@ const Style_MainWrapper = styled(CommonComponents.WrapperComp)`
     .fortfolio {
         font-size: 1.72rem;
         font-weight: 900;
-        translate: 100px 70px;
+        translate: 200px 80px;
         color: #a3a3a3;
     }
 `;
@@ -39,12 +39,9 @@ const Style_Box = styled.div`
 
     .name {
         text-align: center;
-        margin-bottom: 18px;
-        color: #fff;
-        background-color: #57746f;
+        margin-bottom: 50px;
+        color: var(--primary-color);
         border-radius: 60px;
-        padding: 12px 30px;
-        width: fit-content;
         word-spacing: 2px;
         letter-spacing: 1px;
     }
