@@ -6,7 +6,7 @@ function ProjectComp() {
     return (
         <Style_Wrapper>
             <div className="max_widthBox">
-                <CommonComponents.H3Comp title="프로젝트" color="#c3c3c3" />
+                <CommonComponents.H3Comp title="프로젝트" color="var(--primary-color)" fontsize="2rem" stroke />
                 <SlideComp />
             </div>
         </Style_Wrapper>
@@ -16,12 +16,14 @@ function ProjectComp() {
 export default ProjectComp;
 
 const Style_Wrapper = styled(CommonComponents.WrapperComp)`
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
     display: flex;
     align-items: center;
+    height: fit-content;
+    padding: 100px 0;
 
     .max_widthBox {
-        width: 1280px;
+        width: 1200px;
         margin: 0 auto;
     }
 `;
