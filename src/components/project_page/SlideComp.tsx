@@ -3,6 +3,16 @@ import { styled } from "styled-components";
 import { motion, useMotionValue } from "framer-motion";
 import { projects_data } from "../../data/project_data";
 
+// TYPE
+import { title_interface } from "../../types/title";
+import { stack_type } from "../../types/stack";
+import { insight_interface } from "../../types/insight";
+
+// SLIDE CONTENTS COMP
+import ProjectTitleComp from "./slidecontents/ProjectTitleComp";
+import StackComp from "./slidecontents/StackComp";
+import InsightComp from "./slidecontents/InsightComp";
+
 const DRAG_RANGE = 50;
 
 function SlideComp() {
@@ -10,30 +20,18 @@ function SlideComp() {
     const [slideIdx, setSlideIdx] = useState(0);
     const motionX = useMotionValue(0);
 
-    const project = projects_data.map((ele, i) => {
+    const SLIDE_CONTENTS = projects_data.map((ele) => {
         return (
-            <Style_Slide key={i}>
+            <Style_Slide key={ele.id}>
                 <Style_SlideLeft>
-                    <div className="title_box">
-                        <h2>{ele.title}</h2>
-                        {ele.sub}
-                    </div>
-
-                    <div className="stack_box">
-                        <Style_H3>스택</Style_H3>
-                        {ele.stack.map((Stack, i) => (
-                            <React.Fragment key={i}>{Stack}</React.Fragment>
-                        ))}
-                    </div>
-
-                    <div className="role_box">
-                        <Style_H3>역할</Style_H3>
-                        {ele.role}
-                    </div>
+                    <ProjectTitleComp title={ele.title} id={ele.id as keyof title_interface} />
+                    <StackComp stack={ele.id as keyof stack_type} />
                 </Style_SlideLeft>
 
+                <Style_Borderline />
+
                 <Style_SlideRight>
-                    <div className="detail_box"></div>
+                    <InsightComp insight={ele.id as keyof insight_interface} />
                 </Style_SlideRight>
             </Style_Slide>
         );
@@ -63,10 +61,10 @@ function SlideComp() {
                 animate={{ translateX: `calc(-${slideIdx * 100}%)` }}
                 onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+                transition={{ duration: 0.3 }}
                 style={{ x: motionX }}
             >
-                {project}
+                {SLIDE_CONTENTS}
             </Style_SlideBox>
         </>
     );
@@ -81,55 +79,33 @@ const Style_SlideBox = styled(motion.ul)`
 `;
 
 const Style_Slide = styled.li`
-    height: 660px;
-    min-width: 1250px;
+    height: 550px;
+    min-width: calc(1200px - 30px);
     border-radius: 10px;
     background-color: #fff;
     border: 0.1px solid #868f9690;
-    padding: 30px 40px;
+    padding: 10px 16px;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 26px;
+    flex: 1;
 `;
 
 const Style_SlideLeft = styled.div`
-    width: 50%;
-
-    .title_box {
-        h2 {
-            font-size: 3.2rem;
-            font-weight: 900;
-            color: var(--color-black);
-        }
-
-        img {
-            width: 35px;
-            height: 35px;
-            display: block;
-            margin-left: 5px;
-        }
-    }
-
-    .stack_box {
-        margin-top: 4rem;
-
-        svg {
-            display: inline-block;
-            margin-right: 10px;
-        }
-    }
-
-    .role_box {
-        margin-top: 4rem;
-    }
+    width: 40%;
+    height: 100%;
 `;
 
 const Style_SlideRight = styled.div`
-    width: 50%;
+    width: 60%;
+    height: 100%;
+    overflow: scroll;
+    padding-right: 10px;
+    word-break: keep-all;
 `;
 
-const Style_H3 = styled.h3`
-    color: var(--black-color);
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin-bottom: 8px;
+const Style_Borderline = styled.div`
+    height: 90%;
+    width: 1px;
+    background-color: var(--primary-color);
 `;
