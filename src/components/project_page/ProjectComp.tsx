@@ -16,7 +16,7 @@ function ProjectComp() {
 export default ProjectComp;
 
 const Style_Wrapper = styled(CommonComponents.WrapperComp)`
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
     display: flex;
     align-items: center;
     height: fit-content;
