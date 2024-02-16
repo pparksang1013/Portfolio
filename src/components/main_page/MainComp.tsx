@@ -7,7 +7,7 @@ function Main() {
             <p className="fortfolio">포트폴리오</p>
 
             <Style_Box>
-                <p className="name">NPM RUN INSTALL PARK SANG MIN</p>
+                <p className="name">NPM INSTALL PARK SANG MIN</p>
 
                 <img src="/img/logo.png" alt="logo" width="160" height="60" />
 
