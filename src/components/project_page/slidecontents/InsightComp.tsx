@@ -15,7 +15,7 @@ function TodoInsight() {
 
             <Style_P>로그인이 완료되면 local storage에 저장하는 기능 구현을 구현했습니다.</Style_P>
 
-            <CommonComponents.InsightTitle title="Axios" i="02." eng />
+            <CommonComponents.InsightTitle title="Axios" i="02." eng="true" />
             <Style_P>
                 회원가입과 로그인 버튼을 누르면 axios를 통해 사전과제에서 주어진 API 주소와 통신하는 기능 구현했습니다.
             </Style_P>
@@ -51,7 +51,7 @@ function KanbanInsight() {
                 객체 불변성의 중요성을 배울 수 있었습니다.
             </Style_P>
 
-            <CommonComponents.InsightTitle title="Git" i="02." eng />
+            <CommonComponents.InsightTitle title="Git" i="02." eng="true" />
             <Style_P>
                 레포지토리를 두 번 파야하는 사고가 있었지만, 이 경험을 통해 Git을 사용하는데 많이 익숙해질 수
                 있었습니다.
@@ -76,16 +76,16 @@ function KanbanInsight() {
 function BlogInsight() {
     return (
         <>
-            <CommonComponents.InsightTitle title="NEXT" i="01." eng />
+            <CommonComponents.InsightTitle title="NEXT" i="01." eng="true" />
             <Style_P>Nextjs 기본 개념을 학습했습니다.</Style_P>
 
-            <CommonComponents.InsightTitle title="SSR" i="02." eng />
+            <CommonComponents.InsightTitle title="SSR" i="02." eng="true" />
             <Style_P>SSR과 CSR 개념을 학습했습니다.</Style_P>
 
             <CommonComponents.InsightTitle title="타입스크립트" i="03." />
             <Style_P>타입스크립트 기본 개념을 학습했습니다.</Style_P>
 
-            <CommonComponents.InsightTitle title="CSS ISSUE🔥" i="04." eng />
+            <CommonComponents.InsightTitle title="CSS ISSUE🔥" i="04." eng="true" />
             <Style_P>
                 메인페이지에서 포스팅 페이지 경로로 이동 후 메인페이지로 돌아왔을 때 CSS가 깨지는{" "}
                 <CommonComponents.Highlight>문제가 발생</CommonComponents.Highlight> 했습니다.
@@ -101,7 +101,7 @@ function BlogInsight() {
                 사용할 때 ID와 Class의 값의 중요성을 실감했습니다.
             </Style_P>
 
-            <CommonComponents.InsightTitle title="Pre tag ISSUE🔥" i="05." eng />
+            <CommonComponents.InsightTitle title="Pre tag ISSUE🔥" i="05." eng="true" />
             <Style_P>포스팅 페이지에서 Code를 표시하기 위해 pre tag를 사용했습니다.</Style_P>
 
             <Style_P>
@@ -119,7 +119,7 @@ function BlogInsight() {
 function PortfolioInsight() {
     return (
         <>
-            <CommonComponents.InsightTitle title="Framer motion" i="01." eng />
+            <CommonComponents.InsightTitle title="Framer motion" i="01." eng="true" />
             <Style_P>Framer motion 라이브러리 기본 개념을 학습했습니다.</Style_P>
 
             <Style_P>Framer motion을 사용해 Slide 기능을 구현했습니다.</Style_P>

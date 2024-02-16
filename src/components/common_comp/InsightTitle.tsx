@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 interface StyleProps {
-    eng?: boolean;
+    $eng?: string;
 }
 
-function InsightTitle({ title, i, eng }: { title: string; i: string; eng?: boolean }) {
+function InsightTitle({ title, i, eng }: { title: string; i: string; eng?: string }) {
     return (
         <Style_Box>
             <Style_InsightIndex>{i}</Style_InsightIndex>
-            <Style_InsightTitle eng={eng}>{title}</Style_InsightTitle>
+            <Style_InsightTitle $eng={eng}>{title}</Style_InsightTitle>
         </Style_Box>
     );
 }
@@ -40,5 +40,5 @@ const Style_InsightTitle = styled.h4<StyleProps>`
     width: fit-content;
     margin-left: 4px;
     text-transform: uppercase;
-    -webkit-text-stroke: ${(props) => (props.eng ? "1.2px" : "0.5px")};
+    -webkit-text-stroke: ${(props) => (props.$eng ? "1.2px" : "0.5px")};
 `;
