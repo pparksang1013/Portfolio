@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { styled } from "styled-components";
 import { motion, useMotionValue } from "framer-motion";
 import { projects_data } from "../../data/project_data";
@@ -12,6 +12,7 @@ import { insight_interface } from "../../types/insight";
 import ProjectTitleComp from "./slidecontents/ProjectTitleComp";
 import StackComp from "./slidecontents/StackComp";
 import InsightComp from "./slidecontents/InsightComp";
+import RepoComp from "./slidecontents/RepoComp";
 
 const DRAG_RANGE = 50;
 
@@ -26,6 +27,8 @@ function SlideComp() {
                 <Style_SlideLeft>
                     <ProjectTitleComp title={ele.title} id={ele.id as keyof title_interface} />
                     <StackComp stack={ele.id as keyof stack_type} />
+
+                    <RepoComp repo={ele.repository} />
                 </Style_SlideLeft>
 
                 <Style_Borderline />
