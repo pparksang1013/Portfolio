@@ -33,7 +33,7 @@ function TodoInsight() {
 function KanbanInsight() {
     return (
         <>
-            <CommonComponents.InsightTitle title="리렌더링🔥" i="01." />
+            <CommonComponents.InsightTitle title="리렌더링 이슈🔥" i="01." />
             <Style_P>
                 Input에서 값을 받아 키보드이벤트로 Enter를 치면 Axios를 통해 서버에 값을 전달해주고, State를 변경해주는
                 로직을 구현했습니다.
@@ -101,7 +101,7 @@ function BlogInsight() {
                 사용할 때 ID와 Class의 값의 중요성을 실감했습니다.
             </Style_P>
 
-            <CommonComponents.InsightTitle title="Pre tag🔥" i="05." eng />
+            <CommonComponents.InsightTitle title="Pre tag ISSUE🔥" i="05." eng />
             <Style_P>포스팅 페이지에서 Code를 표시하기 위해 pre tag를 사용했습니다.</Style_P>
 
             <Style_P>
