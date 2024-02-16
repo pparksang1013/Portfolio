@@ -133,7 +133,7 @@ function BootcampArea() {
                         <h4>디자인감각있는 프론트엔드 개발자</h4>
                     </div>
 
-                    <p className="sub_description">
+                    <div className="sub_description">
                         <p>저는 프론트엔드 개발자에게 있어 디자인 감각도 중요하다고 생각합니다.</p>
                         <p>
                             부트캠프 파이널 프로젝트에서 메인 페이지, 캘린더, 그리고 대쉬보드 페이지의 디자인을
@@ -145,7 +145,7 @@ function BootcampArea() {
                             대한 학습도 계획하고 있습니다. 이런 노력들을 통해 디자인과 기술적 능력을 접목시켜 더 높은
                             수준의 프론트엔드 개발을 지향하고 있습니다.
                         </p>
-                    </p>
+                    </div>
                 </div>
             </Style_BootcampContents>
         </Style_Bootcamp>
