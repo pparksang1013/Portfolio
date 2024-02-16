@@ -320,7 +320,7 @@ import { CommonComponents } from "../common_comp/Index";
 function GitArea() {
     return (
         <Style_Git>
-            <CommonComponents.GitLinkComp href="https://github.com/pparksang1013" />
+            <CommonComponents.GitLinkComp href="https://github.com/pparksang1013" size={120} />
             <div className="arrow_box">
                 <img src="img/arrow.png" alt="arrow" height={32} />
                 <span>github link</span>
