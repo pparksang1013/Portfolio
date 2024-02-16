@@ -51,10 +51,22 @@ const Netlify = styled(Common_Icon).attrs({ as: SiNetlify })``;
 
 function StackComp({ stack }: { stack: keyof stack_type }) {
     const STACK_ICON_OBJ: stack_type = {
-        todo: [<React />, <Router />, <Styled_Components />, <Axios />, <Netlify />],
-        kanban: [<React />, <Git />, <Styled_Components />],
-        blog: [<Next />, <Typescript />, <CSS />],
-        portfolio: [<React />, <Typescript />, <Styled_Components />, <Framer />, <Vite />],
+        todo: [
+            <React key={1} />,
+            <Router key={2} />,
+            <Styled_Components key={3} />,
+            <Axios key={4} />,
+            <Netlify key={5} />,
+        ],
+        kanban: [<React key={1} />, <Git key={2} />, <Styled_Components key={3} />],
+        blog: [<Next key={1} />, <Typescript key={2} />, <CSS key={3} />],
+        portfolio: [
+            <React key={1} />,
+            <Typescript key={2} />,
+            <Styled_Components key={3} />,
+            <Framer key={4} />,
+            <Vite key={5} />,
+        ],
     };
 
     return (
