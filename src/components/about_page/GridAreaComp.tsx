@@ -155,7 +155,8 @@ function BootcampArea() {
 const Style_Bootcamp = styled.div`
     grid-area: bootcamp;
     padding: 30px;
-    border: 0.4px solid #999;
+    border: 0.4px solid #c3c4c8;
+    background-color: #f9fafc;
 
     h3 {
         padding-left: 10px;
