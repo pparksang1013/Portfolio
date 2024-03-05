@@ -53,6 +53,8 @@ function PortfolioTitle({ title }: { title: string }) {
 
             <Style_ProjectDescription>
                 <li>포트폴리오 웹페이지</li>
+                <li>컴포넌트 구조가 이해하기 쉽게 구성하려고 노력했습니다.</li>
+                <li>좋은 아키텍쳐란 무엇인가? 라는 고민을 했던 프로젝트</li>
             </Style_ProjectDescription>
         </Style_ProjectTitle>
     );
