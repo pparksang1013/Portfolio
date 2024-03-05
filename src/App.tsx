@@ -1,6 +1,7 @@
 import MainComp from "./components/main_page/MainComp";
 import AboutComp from "./components/about_page/AboutComp";
 import ProjectComp from "./components/project_page/ProjectComp";
+import ContactComp from "./components/contact_page/ContactComp";
 
 import styled from "styled-components";
 
@@ -10,7 +11,7 @@ function App() {
             <MainComp />
             <AboutComp />
             <ProjectComp />
-            <div>PROJECT 1. 투두리스트 + 로그인 2. 칸반보드 3. 블로그 4. 아워맵 하</div>
+            <ContactComp />
         </Style_Root>
     );
 }
