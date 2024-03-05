@@ -14,7 +14,10 @@ function Main() {
                 <Style_Title>IMPORT</Style_Title>
             </Style_Box>
 
-            <img src="/img/function.png" alt="function_img" height="28" className="function" />
+            <img src="/img/main_obj.png" alt="function_img" height="170" className="obj1 common_obj" />
+            <img src="/img/main_obj2.png" alt="function_img" height="110" className="obj2 common_obj" />
+            <img src="/img/main_obj3.png" alt="function_img" height="24" className="obj3 common_obj" />
+            <img src="/img/main_obj3.png" alt="function_img" height="50" className="obj4 common_obj" />
         </Style_MainWrapper>
     );
 }
@@ -46,6 +49,31 @@ const Style_MainWrapper = styled(CommonComponents.WrapperComp)`
         position: absolute;
         bottom: 20%;
         left: 28.33%;
+    }
+
+    .common_obj {
+        position: absolute;
+    }
+
+    .obj1 {
+        top: 54%;
+        left: 18%;
+    }
+
+    .obj2 {
+        top: 37%;
+        right: 21%;
+    }
+
+    .obj3 {
+        top: 34%;
+        right: 49%;
+    }
+
+    .obj4 {
+        top: 66%;
+        right: 30%;
+        rotate: 70deg;
     }
 `;
 
