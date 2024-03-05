@@ -16,7 +16,7 @@ function ContactComp() {
                 <li>박상민</li>
                 <li>📞 010 4010 3000</li>
                 <li>
-                    <a href="github.com/pparksang1013">
+                    <a href="https://github.com/pparksang1013">
                         <FaGithub />
                         Github
                     </a>
