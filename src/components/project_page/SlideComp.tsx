@@ -17,7 +17,7 @@ import RepoComp from "./slidecontents/RepoComp";
 const DRAG_RANGE = 50;
 
 function SlideComp() {
-    const [drag, setDrag] = useState(false);
+    const [, setDrag] = useState(false);
     const [slideIdx, setSlideIdx] = useState(0);
     const motionX = useMotionValue(0);
 
