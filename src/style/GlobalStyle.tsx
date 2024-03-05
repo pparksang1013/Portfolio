@@ -22,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         --primary-rgb: 36, 211, 177;
         --blue-color: #4078D3;
         --yellow-color: #FFE385;
+        --orange-color: #ff6c4f;
     }
     
     * {
@@ -44,6 +45,11 @@ export const GlobalStyle = createGlobalStyle`
     ul, li {
         list-style: none;
     }
+
+    a {
+        text-decoration: none;
+    }
+
 
     ::-webkit-scrollbar {
         display: none; 
