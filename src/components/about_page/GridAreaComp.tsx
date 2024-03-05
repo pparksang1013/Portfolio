@@ -11,7 +11,7 @@ function NameArea() {
                 <li className="name_phone">010 4010 3000</li>
             </ul>
 
-            <img src="img/chiken.png" alt="character" height={130} />
+            <img src="img/chicken.png" alt="character" height={130} />
         </Style_Name>
     );
 }
@@ -332,7 +332,7 @@ function GitArea() {
 
 const Style_Git = styled.div`
     grid-area: git;
-    background-color: #ff6c4f;
+    background-color: var(--orange-color);
     display: flex;
     justify-content: center;
     align-items: center;
