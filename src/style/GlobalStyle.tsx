@@ -1,21 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import suit from "../assets/font/SUIT-Variable.woff2";
-import akira from "../assets/font/AkiraExpandedDemo.otf";
 
 export const GlobalStyle = createGlobalStyle`
-    @font-face {
-        font-family: 'suit';
-        src: url(${suit}) format('woff2-variations');
-        font-weight: 100 900;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "akira";
-        src: url(${akira});
-        font-weight: 900;
-    }
-
     :root {
         --black-color: #454545;
         --primary-color: #24D3B1;
