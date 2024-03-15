@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import minsans from "/font/MinSansVF.ttf";
+import quicksilver from "/font/Quicksilver.ttf";
+import quickItalic from "/font/Quicksilver_Italic.ttf";
 
 export const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -8,11 +10,24 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 100 900;
     }
 
+    @font-face {
+        font-family: "quicksilver";
+        src: url(${quicksilver}) format('truetype');
+        font-weight: 900;
+    }
+
+    @font-face {
+        font-family: "quickitalic";
+        src: url(${quickItalic}) format('truetype');
+        font-weight: 900;
+    }
+
 
     :root {
         --black-color: #454545;
         --primary-color: #8091F2;
         --primary-rgb: 128, 145, 242;
+        --dark-primary: #6F9DD1;
         --yellow-color: #FFE385;
         --orange-color: #ff6c4f;
     }
@@ -39,6 +54,10 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
+    }
+
+    a:visited {
+        color: var(--primary-color);
     }
 
     ::-webkit-scrollbar {
