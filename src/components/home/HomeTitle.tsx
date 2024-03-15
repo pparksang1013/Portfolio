@@ -3,22 +3,43 @@ import { motion } from "framer-motion";
 
 export const HomeTitle = () => {
     return (
-        <StyleHomeTitle
-            initial={{ opacity: 0, x: 0 }}
-            animate={{ opacity: 1, x: -300 }}
-            transition={{ opacity: { duration: 1.4, delay: 1 }, x: { duration: 0.5, delay: 2.4 } }}
+        <StyleTitleBox
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ opacity: { duration: 1.4, delay: 1 } }}
         >
-            프론트엔드 <br />
-            포트폴리오 <br />
-            박상민
-        </StyleHomeTitle>
+            <StyleFrontend>FRONTEND</StyleFrontend>
+            <StyleHomeTitle>PORTFOLIO</StyleHomeTitle>
+            <StyleName>PARKSANGMIN</StyleName>
+        </StyleTitleBox>
     );
 };
 
-const StyleHomeTitle = styled(motion.h1)`
-    font-size: 6.6rem;
-    font-weight: 900;
-    color: #f4f4f4;
-    line-height: 1.2;
-    mix-blend-mode: overlay;
+const StyleTitleBox = styled(motion.div)`
+    width: 50%;
+    font-family: "quickitalic";
+    padding-left: 10.4rem;
+`;
+
+const StyleFrontend = styled.p`
+    font-size: 2rem;
+    line-height: 0.2;
+    margin-left: 1.8rem;
+    color: rgba(157, 199, 247, 1);
+`;
+
+const StyleHomeTitle = styled.h1`
+    font-size: 7.7rem;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    background: linear-gradient(180deg, rgba(157, 199, 247, 1) 5%, rgba(128, 145, 242, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+`;
+
+const StyleName = styled.p`
+    font-size: 3rem;
+    text-align: right;
+    margin-right: 5rem;
+    color: var(--primary-color);
 `;
