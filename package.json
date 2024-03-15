@@ -1,8 +1,8 @@
 {
     "name": "portfolio",
     "private": true,
-    "version": "2.0.0",
-    "description": "version 2.0.0 init",
+    "version": "2.1.0",
+    "description": "메인페이지 - 각종 asset 추가 - 메인페이지 관련 데이터 추가 - 디렉토리 구조 변경",
     "type": "module",
     "scripts": {
         "dev": "vite",
