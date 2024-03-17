@@ -57,6 +57,7 @@ const StyleList = styled(motion.li)`
         display: inline-block;
         width: 100%;
         height: 100%;
+        color: var(--primary-color);
 
         & > img {
             position: absolute;
