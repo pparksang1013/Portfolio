@@ -1,5 +1,5 @@
 import { HomePage } from "../page/HomePage";
-// import { AboutPage } from "../page/about/index";
+import { AboutPage } from "../page/AboutPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         },
         {
             path: "/about",
-            // element: <AboutPage />,
+            element: <AboutPage />,
         },
     ]);
 
