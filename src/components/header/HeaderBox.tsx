@@ -1,14 +1,20 @@
 import styled from "styled-components";
+import { useScroll, useMotionValue, motion, useTransform } from "framer-motion";
 
 export const HeaderBox = ({ children }: { children: React.ReactNode }) => {
-    return <StyleHeaderBox>{children}</StyleHeaderBox>;
+    const { scrollY } = useScroll();
+    const filter = useTransform(scrollY, [0, 50], ["blur(0px)", "blur(10px)"]);
+    const bgColor = useTransform(scrollY, [0, 50], ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0.5)"]);
+
+    return <StyleHeaderBox style={{ backdropFilter: filter, backgroundColor: bgColor }}>{children}</StyleHeaderBox>;
 };
 
-const StyleHeaderBox = styled.header`
-    width: 1400px;
-    max-width: 1400px;
+const StyleHeaderBox = styled(motion.header)`
+    width: 100%;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 70px;
     display: flex;
     gap: 40px;
+    position: fixed;
+    top: 0;
 `;
