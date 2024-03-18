@@ -3,7 +3,7 @@ import { headerdata } from "../../data/header/header";
 import { Link } from "react-router-dom";
 
 interface ITextColor {
-    textColor: boolean;
+    $textcolor: boolean;
 }
 
 export const HeaderNav = ({ path }: { path: string }) => {
@@ -12,7 +12,7 @@ export const HeaderNav = ({ path }: { path: string }) => {
 
         return (
             <li key={ele.id}>
-                <StyleListLink to={ele.link} textColor={isCurrentPath}>
+                <StyleListLink to={ele.link} $textcolor={isCurrentPath}>
                     {ele.title}
                 </StyleListLink>
             </li>
@@ -37,10 +37,10 @@ const StyleUl = styled.ul`
 
 const StyleListLink = styled(Link)<ITextColor>`
     &:visited {
-        color: ${(props) => (props.textColor ? "var(--primary-color)" : "#d6d6d6")};
+        color: ${(props) => (props.$textcolor ? "var(--primary-color)" : "#d6d6d6")};
     }
 
     &:hover {
-        color: ${(props) => (props.textColor ? "var(--primary-color)" : "var(--dark-primary)")};
+        color: ${(props) => (props.$textcolor ? "var(--primary-color)" : "var(--dark-primary)")};
     }
 `;
