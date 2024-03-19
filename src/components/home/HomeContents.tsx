@@ -6,7 +6,7 @@ import { CiLocationArrow1 } from "react-icons/ci";
 
 export const HomeContents = () => {
     const list = homedata.map((ele) => {
-        const listDelay = ele.index * 0.3 + 1.2;
+        const listDelay = ele.index * 0.3 + 2;
         return (
             <StyleList initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: listDelay }} key={ele.id}>
                 <Link to={ele.link}>
