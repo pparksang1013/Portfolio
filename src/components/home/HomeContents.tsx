@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { homedata } from "../../data/home/home";
-import { CiLocationArrow1 } from "react-icons/ci";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const HomeContents = () => {
     const list = homedata.map((ele) => {
@@ -11,8 +11,7 @@ export const HomeContents = () => {
             <StyleList initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: listDelay }} key={ele.id}>
                 <Link to={ele.link}>
                     {ele.title}
-                    <img src={ele.img.path} alt={`${ele.title}_icon`} height={ele.img.height} />
-                    <CiLocationArrow1 className="arrow_icon" size={32} />
+                    <MdKeyboardArrowRight className="arrow_icon" size={38} />
                 </Link>
             </StyleList>
         );
@@ -20,7 +19,7 @@ export const HomeContents = () => {
 
     return (
         <StyleContentsBox>
-            <StyleHomeContents>{list}</StyleHomeContents>
+            <ul>{list}</ul>
         </StyleContentsBox>
     );
 };
@@ -30,26 +29,15 @@ const StyleContentsBox = styled.div`
     font-family: "quicksilver";
 `;
 
-const StyleHomeContents = styled(motion.ul)`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 50px;
-`;
-
 const StyleList = styled(motion.li)`
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: var(--primary-color);
-    width: calc(45% - 60px);
-    height: 200px;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 10px 14px;
+    padding: 10px 30px;
     cursor: pointer;
 
     &:hover {
-        background-color: #dae1fc;
+        background-color: #e5ffea;
     }
 
     & > a {
