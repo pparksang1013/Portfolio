@@ -12,7 +12,7 @@ export const HeaderBox = ({ children }: { children: React.ReactNode }) => {
 const StyleHeaderBox = styled(motion.header)`
     width: 100%;
     margin: 0 auto;
-    padding: 30px 70px;
+    padding: 30px 0;
     display: flex;
     gap: 40px;
     position: fixed;

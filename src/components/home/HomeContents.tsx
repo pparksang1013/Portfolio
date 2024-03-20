@@ -33,7 +33,7 @@ const StyleContentsBox = styled.div`
 const StyleHomeContents = styled(motion.ul)`
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     padding: 50px;
 `;
 
@@ -41,8 +41,8 @@ const StyleList = styled(motion.li)`
     font-weight: 900;
     font-size: 2rem;
     color: var(--primary-color);
-    width: calc(50% - 60px);
-    height: 220px;
+    width: calc(45% - 60px);
+    height: 200px;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 10px 14px;
