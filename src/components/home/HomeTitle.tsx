@@ -25,14 +25,14 @@ const StyleFrontend = styled.p`
     font-size: 2rem;
     line-height: 0.2;
     margin-left: 1.8rem;
-    color: #3a3af2;
+    color: #2fcc90;
 `;
 
 const StyleHomeTitle = styled.h1`
     font-size: 7.7rem;
     line-height: 1;
     letter-spacing: 1.2px;
-    background: linear-gradient(180deg, #3a3af2 5%, #3b74f2 100%);
+    background: linear-gradient(180deg, #2fcc90 0%, var(--primary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `;

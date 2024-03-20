@@ -24,12 +24,13 @@ export const GlobalStyle = createGlobalStyle`
 
 
     :root {
-        --black-color: #454545;
-        --primary-color: #3B74F2;
+        --black-color: #1c2e27;
+        --primary-color: #1AB478;
         --primary-rgb: 128, 145, 242;
         --dark-primary: #3A3AF2;
         --yellow-color: #FFE385;
         --orange-color: #ff6c4f;
+        --darkgrey-color: #4a5752;
     }
     
     * {

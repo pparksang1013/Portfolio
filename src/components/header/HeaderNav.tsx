@@ -41,6 +41,6 @@ const StyleListLink = styled(Link)<ITextColor>`
     }
 
     &:hover {
-        color: ${(props) => (props.$textcolor ? "var(--primary-color)" : "var(--dark-primary)")};
+        color: ${(props) => (props.$textcolor ? "var(--primary-color)" : "var(--orange-color)")};
     }
 `;
