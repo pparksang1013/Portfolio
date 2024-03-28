@@ -12,4 +12,5 @@ export const Logo = () => {
 const StyleLogo = styled.div`
     font-family: "quickitalic";
     font-size: 3rem;
+    margin-left: 12rem;
 `;

@@ -26,11 +26,16 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --black-color: #1c2e27;
         --primary-color: #1AB478;
-        --primary-rgb: 128, 145, 242;
-        --dark-primary: #3A3AF2;
+        --primary-rgb: 26, 180, 120;
+        --red-color:#F25260;
+        --blue-color: #4886D9;
         --yellow-color: #FFE385;
         --orange-color: #ff6c4f;
-        --darkgrey-color: #4a5752;
+        --grey-color: #b6b6b6;
+        --lightgrey-color:#EDF1F2;
+        --darkgrey-color: #888;
+        --darkgrey-rgb: 136, 136, 136;
+        --greengrey-color: #f0f4f3;
     }
     
     * {
