@@ -3,18 +3,20 @@ import { useScroll, useMotionValue, motion, useTransform } from "framer-motion";
 
 export const HeaderBox = ({ children }: { children: React.ReactNode }) => {
     const { scrollY } = useScroll();
-    const filter = useTransform(scrollY, [0, 50], ["blur(0px)", "blur(10px)"]);
-    const bgColor = useTransform(scrollY, [0, 50], ["rgba(251, 251, 251, 0)", "rgba(251, 251, 251, 0.2)"]);
+    const opacity = useTransform(scrollY, [0, 1], [0, 1]);
 
-    return <StyleHeaderBox style={{ backdropFilter: filter, backgroundColor: bgColor }}>{children}</StyleHeaderBox>;
+    return <StyleHeaderBox style={{ opacity }}>{children}</StyleHeaderBox>;
 };
 
 const StyleHeaderBox = styled(motion.header)`
     width: 100%;
-    margin: 0 auto;
     padding: 30px 0;
     display: flex;
+    justify-items: center;
     gap: 40px;
     position: fixed;
     top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    background-color: rgba(251, 251, 251, 0.77);
 `;
