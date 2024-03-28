@@ -1,12 +1,12 @@
 import { HomeSection } from "./HomeSection";
 import { HomeTitle } from "./HomeTitle";
-import { HomeContents } from "./HomeContents";
+import { HomeButton } from "./HomeButton";
 
 export const Home = () => {
     return (
         <HomeSection>
             <HomeTitle />
-            <HomeContents />
+            <HomeButton />
         </HomeSection>
     );
 };
