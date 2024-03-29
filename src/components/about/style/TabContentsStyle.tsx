@@ -1,55 +1,63 @@
 import styled from "styled-components";
-import { IStyleTabColor } from "../type";
+import { TabContentsStyleInterface } from "../type/skill_tab_type";
 
 const Box = styled.div`
     position: relative;
-    height: 100%;
-
-    & > span {
-        font-size: 1.15em;
-        color: var(--darkgrey-color);
-        line-height: 2.6;
-    }
-
-    & img {
-        position: absolute;
-        bottom: 4px;
-        right: 0;
-    }
 `;
 
-const Title = styled.p<IStyleTabColor>`
-    font-size: 2em;
-    font-weight: 900;
-    color: ${(props) => props.$color};
-    padding-bottom: 4px;
+const TitleBox = styled.div<TabContentsStyleInterface>`
     display: flex;
-    align-items: center;
-    font-family: "quicksilver";
-`;
+    gap: 8px;
 
-const BorderLine = styled.div<IStyleTabColor>`
-    width: 9%;
-    height: 14px;
-    background-color: ${(props) => props.$color};
+    & h4 {
+        font-size: 2.4rem;
+        font-weight: 900;
+        color: ${(props) => props.$color};
+        display: flex;
+        align-items: center;
+        font-family: "quicksilver";
+        letter-spacing: 1px;
+    }
+
+    & span {
+        font-size: 1.4rem;
+        margin-top: 10px;
+        font-weight: 900;
+    }
 `;
 
 const Ul = styled.ul`
-    display: flex;
-    flex-wrap: wrap;
     margin: 1.2rem 0 0;
     gap: 8px 30px;
 `;
 
 const Li = styled.li`
-    font-size: 1.8rem;
-    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    border-top: 1px solid var(--grey-color);
+
+    &:last-of-type {
+        border-bottom: 1px solid var(--grey-color);
+    }
 `;
 
-const Num = styled.span<IStyleTabColor>`
+const LiTextBox = styled.div`
+    display: flex;
+
+    & h5 {
+        font-size: 2.4rem;
+        font-weight: 900;
+        word-spacing: 2px;
+        letter-spacing: -1px;
+    }
+`;
+
+const Num = styled.span<TabContentsStyleInterface>`
     vertical-align: top;
     font-weight: 900;
-    font-size: 0.4em;
+    font-size: 1em;
     color: ${(props) => props.$color};
     display: inline-block;
     margin-left: 4px;
@@ -58,9 +66,9 @@ const Num = styled.span<IStyleTabColor>`
 
 export const tabContentsStyle = {
     Box,
-    Title,
+    TitleBox,
     Ul,
     Li,
+    LiTextBox,
     Num,
-    BorderLine,
 };
