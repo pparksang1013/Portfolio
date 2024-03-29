@@ -1,9 +1,7 @@
 import styled from "styled-components";
+import { aboutBoxStyle } from "./style/AboutBoxStyle";
+aboutBoxStyle;
 
 export const AboutBox = ({ children }: { children: React.ReactNode }) => {
-    return <StyleAboutBox>{children}</StyleAboutBox>;
+    return <aboutBoxStyle.Box>{children}</aboutBoxStyle.Box>;
 };
-
-const StyleAboutBox = styled.section`
-    color: var(--black-color);
-`;

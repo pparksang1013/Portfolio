@@ -1,16 +1,10 @@
-import styled from "styled-components";
+import { logoStyle } from "./style/LogoStyle";
 import { Link } from "react-router-dom";
 
 export const Logo = () => {
     return (
-        <StyleLogo>
+        <logoStyle.Logo>
             <Link to="/">PARKSANGMIN</Link>
-        </StyleLogo>
+        </logoStyle.Logo>
     );
 };
-
-const StyleLogo = styled.div`
-    font-family: "quickitalic";
-    font-size: 3rem;
-    margin-left: 12rem;
-`;

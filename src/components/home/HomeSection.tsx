@@ -1,18 +1,5 @@
-import styled from "styled-components";
-import background from "/img/home_bg.png";
+import { homeSectionStyle } from "./style/HomeSectionStyle";
 
 export const HomeSection = ({ children }: { children: React.ReactNode }) => {
-    return <StyleHomeSec>{children}</StyleHomeSec>;
+    return <homeSectionStyle.HomeSection>{children}</homeSectionStyle.HomeSection>;
 };
-
-const StyleHomeSec = styled.section`
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(${background});
-    background-position: center;
-    background-repeat: no-repeat;
-`;
