@@ -13,12 +13,14 @@ const Ul = styled.ul`
 `;
 
 const NavLink = styled(Link)<NavColorInterface>`
+    color: #d6d6d6;
+
     &:visited {
         color: ${(props) => (props.$textcolor ? "var(--primary-color)" : "#d6d6d6")};
     }
 
     &:hover {
-        color: ${(props) => (props.$textcolor ? "var(--primary-color)" : "var(--orange-color)")};
+        color: ${(props) => (props.$textcolor ? "var(--primary-color)" : "var(--black-color)")};
     }
 `;
 

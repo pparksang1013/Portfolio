@@ -7,7 +7,7 @@ const Box = styled.div`
 `;
 
 const NameBox = styled.div`
-    padding: 11.5rem 0 0 24rem;
+    padding: 12.5rem 0 0 24rem;
     display: flex;
     gap: 10px;
 `;

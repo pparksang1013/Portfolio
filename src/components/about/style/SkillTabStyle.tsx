@@ -16,6 +16,7 @@ const Li = styled.li<SkillTabStyleInterface>`
     font-size: 0.9em;
     padding: 0 18px 0 0;
     color: ${(props) => (props.$active ? "var(--black-color)" : "#d0d0d0")};
+    cursor: pointer;
 
     &:last-of-type {
         margin-bottom: 0;

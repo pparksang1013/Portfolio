@@ -15,7 +15,7 @@ export const AboutProfile = () => {
                 👋 타인의 의견을 수용하며 지속적으로 성장해 나가는 프론트엔드 개발자
             </aboutProfileStyle.Desc>
             <aboutProfileStyle.ImgBox>
-                <img src={profileImg} height={570} />
+                <img src={profileImg} height={650} />
             </aboutProfileStyle.ImgBox>
         </aboutProfileStyle.Box>
     );
