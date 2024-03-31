@@ -1,15 +1,15 @@
-import { tabContentsData } from "../../../data/about/about";
+import { TAB_CONTENTS_DATA } from "../data/skill_tab_data";
 import { tabContentsStyle } from "../style/TabContentsStyle";
 
 export const TabJs = () => {
-    const list = tabContentsData.js.contents.map((ele) => {
+    const list = TAB_CONTENTS_DATA.js.contents.map((ele) => {
         return (
             <tabContentsStyle.Li key={ele.number}>
                 <tabContentsStyle.LiTextBox>
                     <h5>{ele.title}</h5>
                     <tabContentsStyle.Num $color="#fec21d;">{ele.number}</tabContentsStyle.Num>
                 </tabContentsStyle.LiTextBox>
-                <img src={tabContentsData.js.image} alt="object" height={16} />
+                <img src={TAB_CONTENTS_DATA.js.image} alt="object" height={16} />
             </tabContentsStyle.Li>
         );
     });
