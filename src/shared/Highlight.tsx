@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-export const Highlight = ({ children }: { children: React.ReactNode }) => {
-    return <StyleHighlight>{children}</StyleHighlight>;
+export interface HighlightStyleInterface {
+    $textcolor?: string;
+}
+
+export const Highlight = ({ children, textcolor }: { children: React.ReactNode; textcolor?: string }) => {
+    return <StyleHighlight $textcolor={textcolor}>{children}</StyleHighlight>;
 };
 
-const StyleHighlight = styled.b`
-    color: var(--primary-color);
+const StyleHighlight = styled.b<HighlightStyleInterface>`
+    color: ${(props) => (props.$textcolor ? props.$textcolor : `var(--primary-color)`)};
 `;
