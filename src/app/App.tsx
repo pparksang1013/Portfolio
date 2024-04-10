@@ -1,5 +1,7 @@
 import { HomePage } from "../page/HomePage";
 import { AboutPage } from "../page/AboutPage";
+import { ProjectPage } from "../page/ProjectPage";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -11,6 +13,10 @@ function App() {
         {
             path: "/about",
             element: <AboutPage />,
+        },
+        {
+            path: "/project",
+            element: <ProjectPage />,
         },
     ]);
 
