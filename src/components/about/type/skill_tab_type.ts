@@ -1,12 +1,3 @@
-export interface SkillTabStyleInterface {
-    $active: boolean;
-}
-
-export interface SkillTabDataInterface {
-    id: number;
-    title: string;
-}
-
 export interface TabContentsStyleInterface {
     $color: string;
 }

@@ -1,6 +1,7 @@
-import { SkillTabDataInterface, TabContentsDataInterface } from "../type/skill_tab_type";
+import { TabContentsDataInterface } from "../type/skill_tab_type";
+import { TabDataInterface } from "../../../type/tab_type";
 
-export const SKILL_TAB_DATA: SkillTabDataInterface[] = [
+export const SKILL_TAB_DATA: TabDataInterface[] = [
     { id: 0, title: "자바스크립트" },
     { id: 1, title: "리액트" },
 ];

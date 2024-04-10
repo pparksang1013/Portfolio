@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { SkillTabStyleInterface } from "../type/skill_tab_type";
+
+import { TabStyleInterface } from "../../../type/tab_type";
 
 const Box = styled.div`
     width: 100%;
@@ -12,7 +13,7 @@ const Ul = styled.ul`
     margin-bottom: 1rem;
 `;
 
-const Li = styled.li<SkillTabStyleInterface>`
+const Li = styled.li<TabStyleInterface>`
     font-size: 0.9em;
     padding: 0 18px 0 0;
     color: ${(props) => (props.$active ? "var(--black-color)" : "#d0d0d0")};
