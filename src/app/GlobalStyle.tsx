@@ -30,12 +30,14 @@ export const GlobalStyle = createGlobalStyle`
         --red-color:#F25260;
         --blue-color: #4886D9;
         --yellow-color: #FFE385;
-        --orange-color: #ff6c4f;
+        --orange-color: #FF8B4F;
+        --orange-rgb: 255, 139, 79;
         --grey-color: #b6b6b6;
         --lightgrey-color:#EDF1F2;
         --darkgrey-color: #888;
         --darkgrey-rgb: 136, 136, 136;
         --greengrey-color: #f0f4f3;
+        --font-toss: "Tossface";
     }
     
     * {
