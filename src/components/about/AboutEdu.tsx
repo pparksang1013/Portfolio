@@ -11,7 +11,7 @@ export const AboutEdu = () => {
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                 >
                     <aboutEduStyle.LeftBox>
                         2022.11 ~<br />
@@ -35,7 +35,7 @@ export const AboutEdu = () => {
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                 >
                     <aboutEduStyle.LeftBox>
                         2023.04 &
@@ -56,7 +56,7 @@ export const AboutEdu = () => {
                     initial={{ opacity: 0, x: 100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
                 >
                     <aboutEduStyle.LeftBox>
                         2012.02 ~<br />
