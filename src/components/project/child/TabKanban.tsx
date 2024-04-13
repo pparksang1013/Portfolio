@@ -1,5 +1,7 @@
 import { tabCommonStyle } from "../style/TabCommonStyle";
 import { Highlight } from "../../../shared/Highlight";
+import { KANBAN_FUNC_CONTENTS_DATA } from "../data/func_content_data";
+import { FuncContent } from "./FuncContent";
 
 export const TabKanban = () => {
     return (
@@ -58,69 +60,7 @@ export const TabKanban = () => {
 
                 <h3>구현 사항</h3>
 
-                <tabCommonStyle.FuncContent>
-                    <h5>종합적인 CRUD 기능</h5>
-
-                    <ul>
-                        <li>
-                            칸반보드의 핵심 요소인 <Highlight>card와 task를 위한 종합적인 CRUD</Highlight> 시스템 구축.
-                        </li>
-                        <li>
-                            axios 라이브러리를 활용하여 <Highlight>HTTP 메서드</Highlight> 기반의 CRUD 구현.
-                        </li>
-                        <li>
-                            다양한 컴포넌트에서 사용하기 위해 HTTP 메서드를 <Highlight>모듈화</Highlight>하여 코드의
-                            재사용성과 유지보수성을 향상.
-                        </li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>async / await</h5>
-
-                    <ul>
-                        <li>async / await을 사용해 서버로부터 응답을 받은 후 페이지 렌더링이 이루어지도록 구현.</li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>proxy 설정</h5>
-
-                    <ul>
-                        <li>
-                            http-proxy-middleware 라이브러리 <Highlight>createProxyMiddleware</Highlight> 함수를 사용해
-                            proxy 설정.
-                        </li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>캘린더 페이지</h5>
-
-                    <ul>
-                        <li>react-calendar 라이브러리를 사용해 캘린더 페이지 구현.</li>
-                        <li>캘린더 페이지에서 일정이 있는 날짜는 Mark되는 기능 구현.</li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>대쉬보드 페이지</h5>
-
-                    <ul>
-                        <li>apexcharts 라이브러리를 사용해 대쉬보드 페이지 구현.</li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>Github를 통한 프로젝트 형상관리</h5>
-
-                    <ul>
-                        <li>
-                            팀 리더로서 GitHub를 통한 프로젝트 형상 관리에 있어 fork 기능으로 팀원들의 코드를 관리하고,
-                            코드 병합 및 검토를 위해 pull request 기능을 적극 활용.
-                        </li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
+                <FuncContent contents={KANBAN_FUNC_CONTENTS_DATA} />
             </tabCommonStyle.FuncBox>
 
             <tabCommonStyle.TroubleShootingBox>

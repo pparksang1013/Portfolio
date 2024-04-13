@@ -1,5 +1,6 @@
 import { tabCommonStyle } from "../style/TabCommonStyle";
-import { Highlight } from "../../../shared/Highlight";
+import { BLOG_FUNC_CONTENTS_DATA } from "../data/func_content_data";
+import { FuncContent } from "./FuncContent";
 
 export const TabBlog = () => {
     return (
@@ -39,66 +40,7 @@ export const TabBlog = () => {
 
                 <h3>구현 사항</h3>
 
-                <tabCommonStyle.FuncContent>
-                    <h5>포스팅 정적 생성</h5>
-
-                    <ul>
-                        <li>
-                            Next.js의 <Highlight>generateStaticParams 함수</Highlight>를 사용해 블로그 포스팅을 위한
-                            정적 페이지 생성.
-                        </li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>Contentlayer 라이브러리</h5>
-
-                    <ul>
-                        <li>
-                            MDX 파일로 작성한 블로그 포스팅 파일을 효율적으로 관리하기 위해 Contentlayer 라이브러리를
-                            사용.
-                        </li>
-                        <li>
-                            useMDXComponent hook을 사용해 커스텀 리액트 컴포넌트 사용. 이를 통해, MDX에서 작성한 내용에
-                            대한 스타일링을 자유자재로 표현할 수 있었고, 사용되는 레이아웃이나 컴포넌트 재사용.
-                        </li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>포스팅 검색 기능</h5>
-
-                    <ul>
-                        <li>자바스크립트 메서드와 react useState를 통해 검색기능 구현.</li>
-                        <li>Contentlayer에서 제공하는 객체를 활용하여 filter 메서드를 이용한 검색 기능.</li>
-                        <li>
-                            input 필드에 값이 입력될 때, useState를 사용하여 input 필드 아래에 검색 결과를 표시하는 기능
-                            구현.
-                        </li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>Next app 디렉토리</h5>
-
-                    <ul>
-                        <li>Next.js의 app 디렉토리 사용.</li>
-                        <li>파일 기반 라우팅과 동적 라우팅 구현.</li>
-                        <li>layout.tsx 파일을 통해 공통 UI 컴포넌트를 관리 및 재사용.</li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
-
-                <tabCommonStyle.FuncContent>
-                    <h5>MDX</h5>
-
-                    <ul>
-                        <li>MDX metadata를 활용해 포스팅을 효율적으로 관리.</li>
-                        <li>
-                            React.Children.toArray를 활용하여 MDX 파일 내의 h2태그를 filter 메서드를 추출했고, 이를 통해
-                            contents 기능 구현.
-                        </li>
-                    </ul>
-                </tabCommonStyle.FuncContent>
+                <FuncContent contents={BLOG_FUNC_CONTENTS_DATA} />
             </tabCommonStyle.FuncBox>
 
             <tabCommonStyle.TroubleShootingBox>
