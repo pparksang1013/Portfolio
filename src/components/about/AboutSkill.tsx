@@ -4,9 +4,10 @@ import { SkillListEle } from "./child/SkillListEle";
 import { SkillTab } from "./child/SkillTab";
 
 export const AboutSkill = () => {
-    const list = SKILL_LIST_DATA.map((ele) => {
+    const list = SKILL_LIST_DATA.map((ele, i) => {
         return (
             <SkillListEle
+                key={i}
                 item={ele.item}
                 kor={ele.kor}
                 firstcolor={ele.firstcolor}
