@@ -1,18 +1,18 @@
-import { tabCommonStyle } from "../style/TabCommonStyle";
+import { funcContentStyle } from "../style/FuncContentStyle";
 import { FuncContentTypeInterface } from "../type/func_content_type";
 
 export const FuncContent = ({ contents }: { contents: FuncContentTypeInterface[] }) => {
     const data_map = contents.map((ele, i) => {
         return (
-            <tabCommonStyle.FuncContent key={i}>
-                <h5>{ele.title}</h5>
+            <funcContentStyle.Box key={i}>
+                <funcContentStyle.Title>{ele.title}</funcContentStyle.Title>
 
-                <ul>
+                <funcContentStyle.Ul>
                     {ele.details.map((li, i) => (
-                        <li key={i}>{li}</li>
+                        <funcContentStyle.Li key={i}>{li}</funcContentStyle.Li>
                     ))}
-                </ul>
-            </tabCommonStyle.FuncContent>
+                </funcContentStyle.Ul>
+            </funcContentStyle.Box>
         );
     });
 
