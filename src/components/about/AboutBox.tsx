@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { aboutBoxStyle } from "./style/AboutBoxStyle";
 aboutBoxStyle;
 
