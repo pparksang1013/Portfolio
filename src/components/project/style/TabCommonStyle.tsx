@@ -69,15 +69,14 @@ const FuncMain = styled.div`
 
 const FuncContent = styled.div`
     padding: 16px;
-    border: 1px solid rgba(var(--darkgrey-rgb), 0.2);
+    border: 1.5px solid rgba(var(--darkgrey-rgb), 0.2);
     border-radius: 6px;
     margin: 1rem 0;
     background-color: rgba(var(--darkgrey-rgb), 0.06);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.04), -2px -2px 4px rgba(0, 0, 0, 0.04);
-    transition: 0.25s all;
 
     &:hover {
-        border: 1px solid rgba(var(--primary-rgb), 0.5);
+        border: 1.5px solid rgba(var(--primary-rgb), 1);
     }
 
     & h5 {
