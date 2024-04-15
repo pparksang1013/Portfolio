@@ -3,7 +3,7 @@ import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 
 const Box = styled.div`
-    max-width: 1400px;
+    max-width: 1360px;
     margin: 0 auto;
     position: relative;
     margin-top: 30px;
@@ -18,10 +18,10 @@ const CommonStyle = styled.div`
 
     span {
         font-family: "quicksilver";
-        font-size: 1.4rem;
-        -webkit-text-stroke: 1px var(--orange-color);
+        font-size: 1.2rem;
+        -webkit-text-stroke: 1px var(--grey-color);
         padding-bottom: 2px;
-        letter-spacing: 1px;
+        letter-spacing: 1.4px;
 
         &:hover {
             color: var(--orange-color);
@@ -30,22 +30,30 @@ const CommonStyle = styled.div`
     }
 `;
 
+const PrevIcon = styled(FaChevronLeft)`
+    fill: var(--grey-color);
+`;
+
+const NextIcon = styled(FaChevronRight)`
+    fill: var(--grey-color);
+`;
+
 const PrevBox = styled(CommonStyle)`
     position: absolute;
     left: 0;
-`;
 
-const PrevIcon = styled(FaChevronLeft)`
-    fill: var(--orange-color);
+    &:hover ${PrevIcon} {
+        fill: var(--orange-color);
+    }
 `;
 
 const NextBox = styled(CommonStyle)`
     position: absolute;
     right: 0;
-`;
 
-const NextIcon = styled(FaChevronRight)`
-    fill: var(--orange-color);
+    &:hover ${NextIcon} {
+        fill: var(--orange-color);
+    }
 `;
 
 export const paginationStyle = { Box, PrevBox, PrevIcon, NextBox, NextIcon };

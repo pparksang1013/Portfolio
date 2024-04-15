@@ -155,7 +155,7 @@ const InsightContents = styled.div`
     }
 
     & p {
-        line-height: 1.6;
+        line-height: 1.68;
     }
 `;
 

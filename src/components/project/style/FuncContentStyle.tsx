@@ -25,8 +25,8 @@ const Ul = styled.ul`
 
 const Li = styled.li`
     position: relative;
-    line-height: 1.6;
-    margin-bottom: 8px;
+    line-height: 1.68;
+    margin-bottom: 12px;
     word-spacing: 1px;
 
     &:last-of-type {
@@ -35,14 +35,12 @@ const Li = styled.li`
 
     &::before {
         content: "";
-        width: 5px;
-        height: 5px;
-        background-color: rgba(var(--primary-rgb), 0.2);
-        border: 1px solid var(--primary-color);
+        width: 7px;
+        height: 7px;
+        background-color: var(--black-color);
         display: inline-block;
-        margin-right: 8px;
+        margin: 0 8px 3px 0;
         border-radius: 50%;
-        vertical-align: middle;
     }
 `;
 
