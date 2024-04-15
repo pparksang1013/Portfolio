@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { projectTabStyle } from "./style/ProjectTabStyle";
 import { PROJECT_TAB_DATA } from "./data/project_tab_data";
 
@@ -10,6 +10,10 @@ import { ProjectPagination } from "./ProjectPagination";
 
 export const ProjectTab = () => {
     const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [index]);
 
     const list = PROJECT_TAB_DATA.map((ele) => {
         return (
