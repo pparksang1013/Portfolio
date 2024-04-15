@@ -6,6 +6,7 @@ import { PROJECT_TAB_DATA } from "./data/project_tab_data";
 import { TabTodo } from "./child/TabTodo";
 import { TabKanban } from "./child/TabKanban";
 import { TabBlog } from "./child/TabBlog";
+import { TabPortfolio } from "./child/TabPortfolio";
 import { ProjectPagination } from "./ProjectPagination";
 
 export const ProjectTab = () => {
@@ -31,6 +32,7 @@ export const ProjectTab = () => {
                 {index === 0 && <TabTodo />}
                 {index === 1 && <TabKanban />}
                 {index === 2 && <TabBlog />}
+                {index === 3 && <TabPortfolio />}
             </projectTabStyle.Contents>
             <ProjectPagination index={index} setIndex={setIndex} />
         </>
