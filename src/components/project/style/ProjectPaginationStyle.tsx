@@ -14,6 +14,7 @@ const CommonStyle = styled.div`
     align-items: center;
     gap: 4px;
     color: transparent;
+    cursor: pointer;
 
     span {
         font-family: "quicksilver";
