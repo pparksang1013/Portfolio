@@ -10,6 +10,10 @@ const Button = styled(motion(Link))`
     transition: 0.5s all;
     box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.05);
 
+    &:visited {
+        color: var(--primary-color);
+    }
+
     &:hover {
         background-color: var(--primary-color);
         color: #fff;
