@@ -9,6 +9,7 @@ const Button = styled(motion(Link))`
     padding: 10px 20px;
     transition: 0.5s all;
     box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.05);
+    color: var(--primary-color);
 
     &:visited {
         color: var(--primary-color);
