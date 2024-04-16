@@ -27,6 +27,13 @@ const List = styled.li<SkillListStyleInterface>`
     color: var(--grey-color);
     width: 150px;
     min-width: 150px;
+    scale: 1;
+    transform-origin: left;
+    transition: scale 0.5s;
+
+    &:hover {
+        scale: 1.05;
+    }
 
     &:hover ${Item} {
         background: radial-gradient(ellipse at top, ${(props) => props.$firstcolor}, ${(props) => props.$secondcolor});

@@ -47,7 +47,7 @@ const LiTextBox = styled.div`
     display: flex;
 
     & h5 {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         font-weight: 900;
         word-spacing: 2px;
         letter-spacing: -1px;
