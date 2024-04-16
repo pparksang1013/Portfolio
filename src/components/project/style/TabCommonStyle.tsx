@@ -106,8 +106,8 @@ const TroubleShootingContents = styled.div`
     }
 
     & h5 {
-        font-size: 1.2rem;
-        margin: 0.8rem 0 0.4rem;
+        font-size: 1em;
+        margin: 0.8rem 0 0.2rem;
     }
 
     & p {

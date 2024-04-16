@@ -22,12 +22,26 @@ const CommonStyle = styled.div`
         -webkit-text-stroke: 1px var(--grey-color);
         padding-bottom: 2px;
         letter-spacing: 1.4px;
-
-        &:hover {
-            color: var(--orange-color);
-            -webkit-text-stroke: 0px;
-        }
     }
+
+    &:hover span {
+        color: var(--orange-color);
+        -webkit-text-stroke: 1px var(--orange-color);
+    }
+
+    &:hover svg {
+        fill: var(--orange-color);
+    }
+`;
+
+const PrevBox = styled(CommonStyle)`
+    position: absolute;
+    left: 0;
+`;
+
+const NextBox = styled(CommonStyle)`
+    position: absolute;
+    right: 0;
 `;
 
 const PrevIcon = styled(FaChevronLeft)`
@@ -36,24 +50,6 @@ const PrevIcon = styled(FaChevronLeft)`
 
 const NextIcon = styled(FaChevronRight)`
     fill: var(--grey-color);
-`;
-
-const PrevBox = styled(CommonStyle)`
-    position: absolute;
-    left: 0;
-
-    &:hover ${PrevIcon} {
-        fill: var(--orange-color);
-    }
-`;
-
-const NextBox = styled(CommonStyle)`
-    position: absolute;
-    right: 0;
-
-    &:hover ${NextIcon} {
-        fill: var(--orange-color);
-    }
 `;
 
 export const paginationStyle = { Box, PrevBox, PrevIcon, NextBox, NextIcon };
