@@ -4,6 +4,7 @@ const Box = styled.div`
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
+    position: relative;
 `;
 
 const NameBox = styled.div`
@@ -49,8 +50,10 @@ const Desc = styled.div`
 `;
 
 const ImgBox = styled.div`
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: -6%;
+    left: 50%;
+    translate: -50% 0;
 `;
 
 export const aboutProfileStyle = {
