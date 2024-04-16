@@ -13,6 +13,7 @@ export const TAB_CONTENTS_DATA: TabContentsDataInterface = {
             { number: "02", title: "호이스팅" },
             { number: "03", title: "클로저" },
             { number: "04", title: "This" },
+            { number: "05", title: "async/await" },
         ],
         image: "/img/tab_object_js.png",
     },
