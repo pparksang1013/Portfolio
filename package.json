@@ -1,8 +1,8 @@
 {
     "name": "portfolio",
     "private": true,
-    "version": "2.4.0",
-    "description": "프로젝트 포트폴리오 내용 추가 - 컨택트 페이지 추가 - 각종 스타일 수정",
+    "version": "2.4.1",
+    "description": "빌드 관련 스타일 수정",
     "type": "module",
     "scripts": {
         "dev": "vite",
