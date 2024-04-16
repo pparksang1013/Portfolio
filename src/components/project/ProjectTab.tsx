@@ -7,7 +7,7 @@ import { TabTodo } from "./child/TabTodo";
 import { TabKanban } from "./child/TabKanban";
 import { TabBlog } from "./child/TabBlog";
 import { TabPortfolio } from "./child/TabPortfolio";
-import { ProjectPagination } from "./ProjectPagination";
+import { ProjectPagination } from "./child/ProjectPagination";
 
 export const ProjectTab = () => {
     const [index, setIndex] = useState(0);
