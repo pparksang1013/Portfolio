@@ -1,8 +1,8 @@
 {
     "name": "portfolio",
     "private": true,
-    "version": "2.3.0",
-    "description": "Project 페이지 추가 - 탭 메뉴 기능 추가 - 페이지네이션 기능 추가 - Tossface 폰트 추가",
+    "version": "2.4.0",
+    "description": "프로젝트 포트폴리오 내용 추가 - 컨택트 페이지 추가 - 각종 스타일 수정",
     "type": "module",
     "scripts": {
         "dev": "vite",
