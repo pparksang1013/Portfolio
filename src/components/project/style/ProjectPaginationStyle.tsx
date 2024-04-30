@@ -19,7 +19,7 @@ const CommonStyle = styled.div`
     span {
         font-family: "quicksilver";
         font-size: 1.2rem;
-        -webkit-text-stroke: 1px var(--grey-color);
+        color: var(--black-color);
         padding-bottom: 2px;
         letter-spacing: 1.4px;
     }
@@ -45,11 +45,11 @@ const NextBox = styled(CommonStyle)`
 `;
 
 const PrevIcon = styled(FaChevronLeft)`
-    fill: var(--grey-color);
+    fill: var(--black-color);
 `;
 
 const NextIcon = styled(FaChevronRight)`
-    fill: var(--grey-color);
+    fill: var(--black-color);
 `;
 
 export const paginationStyle = { Box, PrevBox, PrevIcon, NextBox, NextIcon };
