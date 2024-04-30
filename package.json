@@ -1,8 +1,8 @@
 {
     "name": "portfolio",
     "private": true,
-    "version": "2.4.1",
-    "description": "빌드 관련 스타일 수정",
+    "version": "2.4.2",
+    "description": "vercel/analytics 추가 - useMotionValueEvent를 사용해 스크롤 애니메이션 조건 추가",
     "type": "module",
     "scripts": {
         "dev": "vite",
